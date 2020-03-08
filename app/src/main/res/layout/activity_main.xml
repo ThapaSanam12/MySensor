@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="0,1"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click on start button to change the values every 5 seconds for 2 minutes"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#000000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:text="Value Names"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:text="Values"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:text="Value1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/val1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:text="20"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:text="Value2"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/val2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:text="21"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:text="Value3"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/val3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:text="22"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:text="Value4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/val4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:text="23"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:text="Value5"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/val5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:text="24"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        />
+
+</TableLayout>
