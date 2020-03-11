@@ -21,27 +21,27 @@ CountDownTimer timer= null;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        value1=findViewById(R.id.val1);
-        value2=findViewById(R.id.val2);
-        value3=findViewById(R.id.val3);
-        value4=findViewById(R.id.val4);
-        value5=findViewById(R.id.val5);
-        btnReset=findViewById(R.id.btnReset);
-        btnStart=findViewById(R.id.btnStart);
+        value1 = findViewById(R.id.val1);
+        value2 = findViewById(R.id.val2);
+        value3 = findViewById(R.id.val3);
+        value4 = findViewById(R.id.val4);
+        value5 = findViewById(R.id.val5);
+        btnReset = findViewById(R.id.btnReset);
+        btnStart = findViewById(R.id.btnStart);
 
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
-            finish();
+                finish();
             }
         });
 
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Handler handler=new Handler();
-                final Runnable run =new Runnable() {
+                final Handler handler = new Handler();
+                final Runnable run = new Runnable() {
                     @Override
                     public void run() {
                         Log.i("Run", "Repeated for every 5 secs ");
@@ -51,7 +51,7 @@ CountDownTimer timer= null;
                 };
                 handler.post(run);
 
-                new CountDownTimer(120000,5000){
+                new CountDownTimer(120000, 5000) {
 
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -68,14 +68,14 @@ CountDownTimer timer= null;
                         value5.setText(Integer.toString(result5));
                         if ((result1 < 15 || result1 > 35) || (result2 < 15 || result2 > 35)
                                 || (result3 < 15 || result3 > 35) || (result4 < 15 || result4 > 35) || (result5 < 15 || result5 > 35)
-                        ){
+                        ) {
                             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                             builder.setMessage("Value1: " + result1 + "\n" + "Value2: " + result2
                                     + "\n" + "Value3: " + result3 + "\n" + "Value4: " + result4
                                     + "\n" + "Value5: " + result5).setTitle("Alert").setTitle("Alert").setPositiveButton("Reset", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int i) {
-                                    Intent intent = new Intent(MainActivity.this,MainActivity.class);
+                                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
                                     startActivity(intent);
                                 }
                             });
@@ -92,7 +92,7 @@ CountDownTimer timer= null;
 
                     }
                 }
-                .start();
+                        .start();
                 btnStart.setEnabled(false);
 
             }
